@@ -3,6 +3,14 @@ function update_data(id, number) {
     $("#"+String(id)).text(String(number));
 }
 
+function writeUserData(userId, name, email, imageUrl) {
+  firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+    profile_picture : imageUrl
+  });
+
+}
 $( document ).ready(function() {
     console.log("starting document!!!!");
 
@@ -30,6 +38,9 @@ $( document ).ready(function() {
             total_load_activePower  = data.val().load_activePower;
         } else {
            update_data(data.key, parseInt(data.val()))
+
+           writeUserData{'Pu PEA'},
+
         }
     });
 
