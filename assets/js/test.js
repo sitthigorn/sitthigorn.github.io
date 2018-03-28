@@ -9,8 +9,8 @@ function writeUserData(userId, name, email, imageUrl) {
     email: email,
     profile_picture : imageUrl
   });
-
 }
+
 $( document ).ready(function() {
     console.log("starting document!!!!");
 
@@ -18,12 +18,12 @@ $( document ).ready(function() {
     console.log("Initialize Firebase");
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyDUhkAHhNES5aYXWHAaaFAMJZQxdkMECRI",
-      authDomain: "pea-ne1-test-project.firebaseapp.com",
-      databaseURL: "https://pea-ne1-test-project.firebaseio.com",
-      projectId: "pea-ne1-test-project",
-      storageBucket: "pea-ne1-test-project.appspot.com",
-      messagingSenderId: "1065057190584"
+    apiKey: "AIzaSyDUhkAHhNES5aYXWHAaaFAMJZQxdkMECRI",
+    authDomain: "pea-ne1-test-project.firebaseapp.com",
+    databaseURL: "https://pea-ne1-test-project.firebaseio.com",
+    projectId: "pea-ne1-test-project",
+    storageBucket: "pea-ne1-test-project.appspot.com",
+    messagingSenderId: "1065057190584"
     };
     firebase.initializeApp(config);
 
@@ -39,8 +39,8 @@ $( document ).ready(function() {
         } else {
            update_data(data.key, parseInt(data.val()))
 
-           writeUserData{'Pu PEA'},
-
+           writeUserData('warodom', 'warodom khamphanchai',
+           'kwarodom@vt.edu', 'https://pbs.twimg.com/profile_images/966896631147765760/AJ836huS_400x400.jpg')
         }
     });
 
