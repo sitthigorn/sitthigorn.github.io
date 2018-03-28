@@ -10,12 +10,12 @@ $( document ).ready(function() {
     console.log("Initialize Firebase");
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyBd3I7da0YqVq0Zotrte07BDYZiynjPYZI",
-      authDomain: "python-training-5535c.firebaseapp.com",
-      databaseURL: "https://python-training-5535c.firebaseio.com",
-      projectId: "python-training-5535c",
-      storageBucket: "python-training-5535c.appspot.com",
-      messagingSenderId: "1048524435307"
+      apiKey: "AIzaSyDUhkAHhNES5aYXWHAaaFAMJZQxdkMECRI",
+      authDomain: "pea-ne1-test-project.firebaseapp.com",
+      databaseURL: "https://pea-ne1-test-project.firebaseio.com",
+      projectId: "pea-ne1-test-project",
+      storageBucket: "pea-ne1-test-project.appspot.com",
+      messagingSenderId: "1065057190584"
     };
     firebase.initializeApp(config);
 
